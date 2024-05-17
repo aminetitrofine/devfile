@@ -26,9 +26,7 @@ events:
 components:
   - name: che-code-injector
     container:
-      image: quay.io/che-incubator/che-code@sha256:ad26f8ad6a1fd685fc15f9b8896377e8f2bc3a8722d3f8efc4b75ecdf7bb21b1
-      command:
-        - /entrypoint-init-container.sh
+      image: quay.io/amine_titrofine/coder1
       volumeMounts:
         - name: checode
           path: /checode
